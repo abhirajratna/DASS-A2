@@ -326,45 +326,7 @@ class TestGameDeepBranchCoverage:
 class TestBankAndDeckBranches:
     def test_bank_collect_positive_and_negative_amounts(self):
         bank = Bank()
-       
-￼
-94 x 5
-1
-CHAT
-WHITE BOX TESTING ASSIGNMENT INSTRUCTIONS
-Great call — this is exactly what evaluators look for.
-
-Recommended commit history (Task 1 only)
-Use these in order so your history looks intentional and matches the assignment wording.
-
-Task1-Setup: create whitebox submission structure
-
-Add: tests, diagrams, report.md, README.md, .gitignore
-Iteration 1: Fix package/lint setup issues for MoneyPoly
-
-Add: __init__.py, cleanup changes in bank.py, game.py, player.py
-Iteration 2: Resolve remaining pylint warning in input handling
-
-Add: ui.py
-Error 1: Fix dice roll range to include 6
-
-Add: dice.py
-Error 2: Fix pass-Go salary logic in player movement
-
-Add: player.py
-Error 3: Fix full-group ownership check for rent multiplier
-
-Add: property.py
-Error 4: Fix exact-balance property purchase condition
-
-Add: game.py
-Error 5: Fix rent transfer to property owner
-
-Add: game.py
-Error 6: Fix winner selection to highest net worth
-
-Add: game.py
- start = bank.get_balance()
+        start = bank.get_balance()
         bank.collect(100)
         bank.collect(-20)
         assert bank.get_balance() == start + 80
